@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lochana Manuth</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Orbitron:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+ <script>
+    // Disable right click
+    document.addEventListener('contextmenu', event => event.preventDefault());
+
+    // Disable inspect keys
+    document.addEventListener('keydown', function(e) {
+      if (
+        e.key === "F12" ||
+        (e.ctrlKey && e.shiftKey && e.key === "I") ||
+        (e.ctrlKey && e.key === "U")
+      ) {
+        e.preventDefault();
+      }
+    });
+  </script>
+<style>
+
+
+
+.social-buttons a{
+  display: inline-flex;
+  text-decoration: none;
+  font-size: 18px;
+  width: 60px;
+  height: 60px;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0 8px;
+}
+
+.social-buttons a::before{
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(45deg,#22a6b3,#30336b);
+  border-radius: 50%;
+  z-index: -1;
+  transition: 0.3s ease-in;
+}
+
+.social-buttons a:hover::before{
+  transform: scale(0);
+}
+
+.social-buttons a i{
+  transition: 0.3s ease-in;
+}
+
+.social-buttons a:hover i{
+  background: linear-gradient(45deg,#22a6b3,#30336b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(2.2);
+}
+
+
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Roboto',sans-serif;background:#0a0f14;color:#e5f7ff;scroll-behavior:smooth;line-height:1.6;}
+a{text-decoration:none;}
+
+/* Sections */
+header,section{padding:60px 20px;max-width:900px;margin:auto;}
+h1,h2{font-family:'Orbitron',sans-serif;color:#00c6ff;}
+p{margin:10px 0;}
+
+/* Hero */
+.hero{text-align:center;padding:80px 20px;}
+.hero img{width:140px;height:140px;border-radius:50%;border:2px solid #00c6ff;object-fit:cover;margin-bottom:20px;}
+
+/* Buttons */
+.btns a{margin:8px;padding:10px 20px;background:#00c6ff;color:#000;border-radius:5px;font-weight:bold;transition:0.3s;}
+.btns a:hover{background:#4dd0ff;}
+
+/* Cards */
+.card{background:#111923;padding:20px;margin:15px 0;border-radius:8px;box-shadow:0 0 10px rgba(0,198,255,0.4);transition:0.3s;}
+.card:hover{box-shadow:0 0 20px rgba(0,198,255,0.7);}
+
+/* Skills */
+.skills div{margin:12px 0;background:#111923;border-radius:6px;overflow:hidden;}
+.skills span{display:block;height:20px;background:#00c6ff;width:0%;transition:1s ease-in-out;border-radius:6px;}
+
+/* Contact Form */
+form input, form textarea{width:100%;padding:10px;margin:8px 0;border-radius:5px;border:none;}
+form button{padding:10px 20px;background:#00c6ff;border:none;border-radius:5px;font-weight:bold;cursor:pointer;transition:0.3s;}
+form button:hover{background:#4dd0ff;}
+
+
+
+
+/* Footer */
+footer{text-align:center;padding:20px;font-size:14px;opacity:0.8;}
+</style>
+</head>
+<body>
+
+
+<header class="hero">
+<img src="https://media.licdn.com/dms/image/v2/D5603AQH64lD-9nOODA/profile-displayphoto-shrink_800_800/B56ZQCDO1.GsAo-/0/1735201227864?e=1766620800&v=beta&t=b0BchNrAIDvB21p52lS6kMVrzyeuoW_FJ2ON_jmIT5g" alt="Lochana">
+<h1>Lochana Manuth Bandara</h1>
+<p>Learning Cyber Security, Penetration Testing & Real-World Security Basics.</p>
+<br>
+<div class="btns">
+
+<a href="#Certifications">Certifications</a>
+<a href="#skills">Skills</a>
+<a href="#projects">View Projects</a>
+<a href="#contact">Contact</a>
+</div>
+</header>
+
+<section id="about">
+<h2>About Me</h2>
+<p>I'm Lochana Manuth, an A/L student at Kumbukgete Central College, following the Engineering Technology stream.
+
+I’m a self-motivated and passionate tech learner with a strong foundation in IT, currently focusing on Cybersecurity and Ethical Hacking. I follow a blended learning approach—combining structured certifications with hands-on labs and continuous self-practice.
+
+I'm actively learning through globally recognized platforms such as Cisco Networking Academy, TryHackMe, Hack The Box, Udemy, EC-Council, ISC2, and TCM Security Academy. Alongside cybersecurity, I’m also developing skills in multiple programming and scripting languages to support automation, web exploitation, and system-level problem-solving.
+
+As a Certified Darkweb Analyst, I have a sound understanding of underground cyber threat landscapes, and I regularly explore areas like penetration testing, threat hunting, and secure coding.
+</p>
+<p><i>Passionate about Cyber Security & Ethical Hacking.</i></p>
+</section>
+
+
+<section id="Certifications">
+  <h2>Certifications</h2>
+
+  <a href="https://tryhackme.com/certificate/THM-LNNO0RTYCD" target="_blank"><div class="card"><b style="color:#e5f7ff">Jr Penetration Tester</b></div></a>
+  <a href="https://tryhackme.com/certificate/THM-EJOW3PHTFW" target="_blank"><div class="card"><b style="color:#e5f7ff">Pre Security</b></div></a>
+  <a href="https://tryhackme.com/certificate/THM-SFJBVHLIRR" target="_blank"><div class="card"><b style="color:#e5f7ff">Security Engineer</b></div></a>
+  <a href="https://www.credly.com/badges/c5694221-df8c-4027-8d52-868640303d68/linked_in_profile" target="_blank"><div class="card"><b style="color:#e5f7ff">Google Cybersecurity Professional</b></div></a>
+  <a href="https://tryhackme.com/certificate/THM-UAN9MQZSXZ" target="_blank"><div class="card"><b style="color:#e5f7ff">Cyber Security 101</b></div></a>
+  <a href="https://www.credly.com/badges/0487eb11-2600-43b6-9c56-a2def711be9b/public_url" target="_blank"><div class="card"><b style="color:#e5f7ff">Introduction to Cybersecurity</b></div></a>
+  <a href="https://www.linkedin.com/in/lochana-manuth/details/certifications/1755020330071/single-media-viewer/?type=DOCUMENT&profileId=ACoAAFYUTiABEJxYoB_ElRsuoPugwc4KPZswECM" target="_blank"><div class="card"><b style="color:#e5f7ff">Introduction to Dark Web Operations</b></div></a>
+
+
+</section>
+
+
+<section id="skills">
+<h2>Skills</h2>
+<div class="skills">Ethical Hacking <span style="width:80%"></span></div>
+<div class="skills">Penetration Testing <span style="width:70%"></span></div>
+<div class="skills">Network Security<span style="width:75%"></span></div>
+<div class="skills">Linux / Terminal<span style="width:65%"></span></div>
+<div class="skills">Wireshark, Nmap, Burp Suite<span style="width:60%"></span></div>
+<div class="skills">Python / Bash<span style="width:50%"></span></div>
+</section>
+
+<section id="projects">
+<h2>Projects</h2>
+<a href="https://github.com/Lochana-1/Mac-Changer" target="_blank"><div class="card"><b style="color:#e5f7ff"><b>Mac-Changer</b><br>Automate MAC address changes on Kali Linux with Python.</b></div></a>
+
+</section>
+
+
+<section id="contact">
+<h2>Contact</h2>
+
+<form action="https://formspree.io/f/mwvelarj" method="POST">
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="email" name="_replyto" placeholder="Your Email" required>
+<textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+<button type="submit">Send</button>
+</form>
+</section>
+
+<section>
+<div class="social-buttons">
+    <center>
+
+<a href="https://www.linkedin.com/in/lochana-manuth/" target="_blank" class="github __web-inspector-hide-shortcut__">
+      <i class="fab fa-linkedin"></i> </a>
+<a href="https://github.com/Lochana-1" target="_blank" class="github __web-inspector-hide-shortcut__">
+      <i class="fab fa-github"></i> </a>
+
+<a href="https://x.com/lochanamanuth1" target="_blank" class="github __web-inspector-hide-shortcut__">
+      <i class="fab fa-x"></i> </a>
+
+<a href="https://x.com/lochanamanuth1" target="_blank" class="github __web-inspector-hide-shortcut__">
+      <i class="fab fa-whatsapp"></i> </a>
+   </center>
+</div>
+</section>
+<footer>
+© 2025 Lochana Manuth
+</footer>
+
+<script>
+// Animate skill bars
+window.addEventListener('load',()=>{
+document.querySelectorAll('.skills span').forEach(span=>{
+const width=span.style.width;
+span.style.width='0';
+setTimeout(()=>{span.style.width=width;},300);
+});
+});
+</script>
+
+</body>
+</html>
