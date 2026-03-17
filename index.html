@@ -10,6 +10,26 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/style.css" />
+  <script>
+// Disable Right Click
+document.addEventListener("contextmenu", event => event.preventDefault());
+
+// Disable F12, Ctrl+Shift+I, Ctrl+U, Ctrl+C
+document.onkeydown = function(e) {
+    if (e.keyCode == 123) { // F12
+        return false;
+    }
+    if (e.ctrlKey && e.shiftKey && e.keyCode == 73) { // Ctrl+Shift+I
+        return false;
+    }
+    if (e.ctrlKey && e.keyCode == 85) { // Ctrl+U
+        return false;
+    }
+    if (e.ctrlKey && e.keyCode == 67) { // Ctrl+C
+        return false;
+    }
+};
+</script>
 </head>
 
 <body>
